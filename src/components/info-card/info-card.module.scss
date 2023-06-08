@@ -1,0 +1,47 @@
+.card {
+    width: 100%;
+    max-width: 255px;
+    padding: 20px 23px 27px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    opacity: 0;
+    animation: rising 0.5s forwards;
+}
+
+.title {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.info {
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+@keyframes rising {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

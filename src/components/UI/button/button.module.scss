@@ -1,0 +1,63 @@
+.button {
+    width: 100%;
+    padding: 12px 0 11px 28px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: transparent;
+    mix-blend-mode: normal;
+    border: 1px solid RGBA(255, 255, 255, .2);
+    box-sizing: border-box;
+    text-align: left;
+
+    &_inactive {
+        cursor: pointer;
+
+        &:hover {
+            background: #D8D8D8;
+        }
+    }
+
+    &__number {
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        margin-right: 28px;
+    }
+}
+
+.Mercury {
+    background: #419EBB;
+}
+
+.Venus {
+    background: #EDA249;
+}
+
+.Earth {
+    background: #6f2ed6;
+}
+
+.Mars {
+    background: #D14C32;
+}
+
+.Jupiter {
+    background: #D83A34;
+}
+
+.Saturn {
+    background: #CD5120;
+}
+
+.Uranus {
+    background: #1ec2a4;
+}
+
+.Neptune {
+    background: #2d68f0;
+}

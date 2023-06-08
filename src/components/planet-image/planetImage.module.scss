@@ -1,0 +1,66 @@
+.imageWrapper {
+  grid-area: image;
+  position: relative;
+  width: 666px;
+  height: 666px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rising 0.5s forwards;
+}
+
+.image {
+  width: 290px;
+}
+
+.image_geology {
+  width: 163px;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -90%)
+}
+
+.Mercury {
+  width: 290px;
+}
+
+.Venus {
+  width: 400px;
+}
+
+.Earth {
+  width: 450px;
+}
+
+.Mars {
+  width: 336px;
+}
+
+.Jupiter {
+  width: 582px;
+}
+
+.Saturn {
+  width: 666px;
+}
+
+.Uranus {
+  width: 458px;
+}
+
+.Neptune {
+  width: 450px;
+}
+
+@keyframes rising {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

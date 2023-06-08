@@ -1,0 +1,49 @@
+.main {
+  grid-area: main;
+  justify-self: end;
+  align-self: start;
+  margin-bottom: 39px;
+}
+
+.title {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 104px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 23px;
+  animation: fading 2s forwards;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  max-width: 350px;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #FFFFFF;
+
+  &__info {
+    margin: 0;
+    animation: fading 2s forwards;
+  }
+
+  &__source {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    vertical-align: baseline;
+  }
+
+  &__link {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-right: 8px;
+  }
+}
