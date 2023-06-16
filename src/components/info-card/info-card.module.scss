@@ -1,3 +1,5 @@
+@import '../../scss/mixins/index.scss';
+
 .card {
     width: 100%;
     max-width: 255px;
@@ -5,6 +7,19 @@
     border: 1px solid rgba(255, 255, 255, .2);
     opacity: 0;
     animation: rising 0.5s forwards;
+    box-sizing: border-box;
+
+    @include tablet {
+        padding: 16px 0px 19px 15px;
+    }
+
+    @include mobile{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 24px 13px;
+    }
 }
 
 .title {
@@ -20,6 +35,18 @@
     opacity: 0.5;
     margin: 0;
     margin-bottom: 4px;
+
+    @include tablet {
+        margin-bottom: 6px;
+        font-size: 8px;
+        line-height: 16px;
+        letter-spacing: 0.727273px;
+    }
+
+    @include mobile {
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
 }
 
 .info {
@@ -32,6 +59,18 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 31px;       
+        letter-spacing: -0.9px;
+    }
+
+    @include mobile {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -0.75px;
+    }
 }
 
 @keyframes rising {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import data from "../../utils/mocks/data.json";
 import styles from "./navigation.module.scss";
@@ -17,7 +17,7 @@ const Navigation = () => {
       <ul className={styles.nav}>
         {items.map((item) => (
           <li key={item}>
-            <NavLink to={`/${item}`} className={styles.link}>
+            <NavLink to={`/${item}`} className={styles.link + ' ' + styles[item]}>
               {item}
             </NavLink>
           </li>

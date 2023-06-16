@@ -1,0 +1,91 @@
+@import '../../scss/variables/index';
+
+.menu {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: #070724;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 24px;
+}
+
+.item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba($color: #FFFFFF, $alpha: .1);
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 25px 5px 0;
+}
+
+.title {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1.36364px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.Mercury {
+    background: $mercury-color;
+}
+
+.Venus {
+    background: $venus-color;
+}
+
+.Earth {
+    background: $earth-color;
+}
+
+.Mars {
+    background: $mars-color;
+}
+
+.Jupiter {
+    background: $jupiter-color;
+}
+
+.Saturn {
+    background: $saturn-color;
+}
+
+.Uranus {
+    background: $uranus-color;
+}
+
+.Neptune {
+    background: $neptune-color;
+}

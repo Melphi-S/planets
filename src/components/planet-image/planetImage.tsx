@@ -20,7 +20,7 @@ const PlanetImage: FC<IPlanetImage> = ({ article, planet}) => {
             : planet.images.overview
         }
         alt={article}
-        className={planet.name}
+        className={styles[planet.name]}
       ></img>
       {article === "geology" && (
         <img

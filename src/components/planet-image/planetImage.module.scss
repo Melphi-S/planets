@@ -1,3 +1,5 @@
+@import '../../scss/mixins/index.scss';
+
 .imageWrapper {
   grid-area: image;
   position: relative;
@@ -6,11 +8,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 18px;
   animation: rising 0.5s forwards;
-}
 
-.image {
-  width: 290px;
+  @include tablet {
+    width: 422px;
+    height: 422px;
+    margin-bottom: 11px;
+  }
+
+  @include mobile {
+    width: 256px;
+    height: 256px;
+    margin: 24px 0;
+  }
 }
 
 .image_geology {
@@ -18,39 +29,127 @@
   position: absolute;
   left: 50%;
   top: 90%;
-  transform: translate(-50%, -90%)
+  transform: translate(-50%, -90%);
+
+  @include tablet {
+    width: 102px;
+  }
+
+  @include mobile {
+    width: 62px;
+  }
 }
 
 .Mercury {
   width: 290px;
+
+  @include tablet {
+    width: 184px;
+    height: 184px;
+  }
+
+  @include mobile {
+    width: 111px;
+    height: 111px;
+  }
 }
 
 .Venus {
   width: 400px;
+
+  @include tablet {
+    width: 253px;
+    height: 253px;
+  }
+
+  @include mobile {
+    width: 154px;
+    height: 154px;
+  }
 }
 
 .Earth {
   width: 450px;
+
+  @include tablet {
+    width: 285px;
+    height: 285px;
+  }
+
+  @include mobile {
+    width: 173px;
+    height: 173px;
+  }
 }
 
 .Mars {
   width: 336px;
+
+  @include tablet {
+    width: 213px;
+    height: 213px;
+  }
+
+  @include mobile {
+    width: 129px;
+    height: 129px;
+  }
 }
 
 .Jupiter {
   width: 582px;
+
+  @include tablet {
+    width: 369px;
+    height: 369px;
+  }
+
+  @include mobile {
+    width: 224px;
+    height: 224px;
+  }
 }
 
 .Saturn {
   width: 666px;
+
+  @include tablet {
+    width: 422px;
+    height: 422px;
+  }
+
+  @include mobile {
+    width: 256px;
+    height: 256px;
+  }
 }
 
 .Uranus {
   width: 458px;
+
+  @include tablet {
+    width: 290px;
+    height: 290px;
+  }
+
+  @include mobile {
+    width: 176px;
+    height: 176px;
+  }
 }
 
 .Neptune {
   width: 450px;
+
+  @include tablet {
+    width: 285px;
+    height: 285px;
+  }
+
+  @include mobile {
+    width: 173px;
+    height: 173px;
+  }
 }
 
 @keyframes rising {

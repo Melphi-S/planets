@@ -1,8 +1,21 @@
+@import '../../scss/mixins/index.scss';
+
 .main {
   grid-area: main;
   justify-self: end;
   align-self: start;
   margin-bottom: 39px;
+
+  @include tablet {
+    justify-self: start;
+  }
+
+  @include mobile {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 28px;
+  }
 }
 
 .title {
@@ -15,6 +28,18 @@
   margin: 0;
   margin-bottom: 23px;
   animation: fading 2s forwards;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 24px;
+  }
+
+  @include mobile {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 16px;
+  }
 }
 
 .text {
@@ -30,20 +55,49 @@
   line-height: 25px;
   color: #FFFFFF;
 
+  @include tablet {
+    min-height: 167px;
+    font-size: 11px;
+    line-height: 22px;
+  }
+
+  @include mobile {
+    min-height: 0;
+    max-width: 100%;
+  }
+
   &__info {
     margin: 0;
     animation: fading 2s forwards;
+    @include mobile {
+      margin-bottom: 32px;
+    }
   }
 
   &__source {
     mix-blend-mode: normal;
     opacity: 0.5;
     vertical-align: baseline;
+
+    @include tablet {
+      font-size: 12px;
+      line-height: 25px;
+    }
   }
 
   &__link {
     text-decoration-line: underline;
     color: #FFFFFF;
     margin-right: 8px;
+  }
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

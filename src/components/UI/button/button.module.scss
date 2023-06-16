@@ -1,19 +1,44 @@
+@import '../../../scss/variables/index';
+@import '../../../scss/mixins/index.scss';
+
 .button {
     width: 100%;
-    padding: 12px 0 11px 28px;
     font-family: 'Spartan';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 25px;
-    letter-spacing: 2.57143px;
     text-transform: uppercase;
     color: #FFFFFF;
     background: transparent;
     mix-blend-mode: normal;
-    border: 1px solid RGBA(255, 255, 255, .2);
     box-sizing: border-box;
     text-align: left;
+
+    &_type {
+        &_desktop {
+            padding: 12px 0 11px 28px;
+            font-size: 12px;
+            line-height: 25px;
+            letter-spacing: 2.57143px;
+            border: 1px solid RGBA(255, 255, 255, .2);
+
+            @include tablet {
+                padding: 8px 0 7px 20px;
+                font-size: 9px;
+                line-height: 25px;
+                letter-spacing: 1.92857px;
+            }
+        }
+
+        &_mobile {
+            font-size: 9px;
+            line-height: 10px;
+            letter-spacing: 1.92857px;
+            padding: 0 0 17px 0;
+            text-align: center;
+            border: none;
+            border-bottom: 4px solid transparent;
+        }
+    }
 
     &_inactive {
         cursor: pointer;
@@ -27,37 +52,105 @@
         mix-blend-mode: normal;
         opacity: 0.5;
         margin-right: 28px;
+
+        @include tablet {
+            margin-right: 17px;
+        }
     }
 }
 
 .Mercury {
-    background: #419EBB;
+    &_type {
+        &_desktop {
+            background: $mercury-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $mercury-color;
+        }
+    }
 }
 
 .Venus {
-    background: #EDA249;
+    &_type {
+        &_desktop {
+            background: $venus-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $venus-color;
+        }
+    }
 }
 
 .Earth {
-    background: #6f2ed6;
+    &_type {
+        &_desktop {
+            background: $earth-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $earth-color;
+        }
+    }
 }
 
 .Mars {
-    background: #D14C32;
+    &_type {
+        &_desktop {
+            background: $mars-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $mars-color;
+        }
+    }
 }
 
 .Jupiter {
-    background: #D83A34;
+    &_type {
+        &_desktop {
+            background: $jupiter-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $jupiter-color;
+        }
+    }
 }
 
 .Saturn {
-    background: #CD5120;
+    &_type {
+        &_desktop {
+            background: $saturn-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $saturn-color;
+        }
+    }
 }
 
 .Uranus {
-    background: #1ec2a4;
+    &_type {
+        &_desktop {
+            background: $uranus-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $uranus-color;
+        }
+    }
 }
 
 .Neptune {
-    background: #2d68f0;
+    &_type {
+        &_desktop {
+            background: $neptune-color;
+        }
+
+        &_mobile {
+            border-bottom: 4px solid $neptune-color;
+        }
+    }
 }

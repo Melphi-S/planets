@@ -1,12 +1,17 @@
+@import '../../scss/variables/index.scss';
+@import '../../scss/mixins/index.scss';
+
 .nav {
     display: flex;
     gap: 33px;
     list-style: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .link {
+    display: inline-block;
     font-family: 'Spartan';
     font-style: normal;
     font-weight: 700;
@@ -17,4 +22,63 @@
     text-decoration: none;
     text-align: end;
     color: rgba(255, 255, 255, .75);
+    padding: 29px 0 27px;
+    border-top: 4px solid transparent;
+    box-sizing: border-box;
+
+    @include tablet {
+        padding-bottom: 35px;
+    }
+
+    &:hover {
+        color: #FFFFFF;
+    }
+}
+
+.Mercury {
+    &:hover {
+        border-color: $mercury-color;
+    }
+}
+
+.Venus {
+    &:hover {
+        border-color: $venus-color;
+    }
+}
+
+.Earth {
+    &:hover {
+        border-color: $earth-color;
+    }
+}
+
+.Mars {
+    &:hover {
+        border-color: $mars-color;
+    }
+}
+
+.Jupiter {
+    &:hover {
+        border-color: $jupiter-color;
+    }
+}
+
+.Saturn {
+    &:hover {
+        border-color: $saturn-color;
+    }
+}
+
+.Uranus {
+    &:hover {
+        border-color: $uranus-color;
+    }
+}
+
+.Neptune {
+    &:hover {
+        border-color: $neptune-color;
+    }
 }
