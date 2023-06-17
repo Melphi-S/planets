@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/planets/static/css/main.a021c975.css",
-    "main.js": "/planets/static/js/main.ff687638.js",
+    "main.js": "/planets/static/js/main.38cedc44.js",
     "static/media/Spartan.ttf": "/planets/static/media/Spartan.254913471b3cfbe8ad30.ttf",
     "static/media/Antonio.ttf": "/planets/static/media/Antonio.644d8da682d673d6a8cf.ttf",
     "static/media/geology-mercury.png": "/planets/static/media/geology-mercury.aa6732c318454e3fc480.png",
@@ -34,10 +34,10 @@
     "static/media/icon-hamburger.svg": "/planets/static/media/icon-hamburger.05a40a49142005f6faf230286ab38214.svg",
     "static/media/icon-chevron.svg": "/planets/static/media/icon-chevron.8915cee97f993fb990aac66c578ad575.svg",
     "main.a021c975.css.map": "/planets/static/css/main.a021c975.css.map",
-    "main.ff687638.js.map": "/planets/static/js/main.ff687638.js.map"
+    "main.38cedc44.js.map": "/planets/static/js/main.38cedc44.js.map"
   },
   "entrypoints": [
     "static/css/main.a021c975.css",
-    "static/js/main.ff687638.js"
+    "static/js/main.38cedc44.js"
   ]
 }
