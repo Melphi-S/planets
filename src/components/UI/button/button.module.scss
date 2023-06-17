@@ -40,12 +40,17 @@
         }
     }
 
-    &_inactive {
+    &_inactive-desktop {
         cursor: pointer;
 
         &:hover {
             background: #D8D8D8;
         }
+    }
+
+    &_inactive-mobile {
+        mix-blend-mode: normal;
+        opacity: 0.5;
     }
 
     &__number {

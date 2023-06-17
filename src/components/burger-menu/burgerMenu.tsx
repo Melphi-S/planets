@@ -5,15 +5,14 @@ import styles from "./burgerMenu.module.scss";
 
 interface IBurgerMenu {
   items: string[];
-  onClick: () => void;
 }
 
-const BurgerMenu: FC<IBurgerMenu> = ({ items, onClick }) => {
+const BurgerMenu: FC<IBurgerMenu> = ({ items }) => {
   return (
     <nav className={styles.menu}>
       <ul className={styles.nav}>
         {items.map((item) => (
-          <li key={item} className={styles.item} onClick={onClick}>
+          <li key={item} className={styles.item}>
             <NavLink to={`/${item}`} className={styles.link}>
               <div className={styles.titleWrapper}>
                 <div className={styles.circle + ' ' + styles[item]}></div>
