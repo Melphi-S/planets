@@ -20,6 +20,7 @@ function App() {
 
     useEffect(() => {
         setBurgerMenu(false);
+        document.body.style.overflow = "unset";
     }, [pathname])
 
     return (
